@@ -1,0 +1,85 @@
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: var(--main-color); */
+    padding: 30px 50px;
+}
+
+.NavLinks {
+    height: 10vh;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: white;
+    transition: .3s;
+}
+
+.MobileNavigation {
+    display: none;
+}
+
+@media (max-width: 600px){
+
+    .DesktopNavigation{
+        display: none;
+    }
+
+    .MobileNavigation{
+        display: flex;
+        align-items: center;
+        height: 10vh;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        border-top: 3px solid orange;
+        top: 10vh;
+        left: 0;
+        height: 50vh;
+        width: 50vw;
+        background-color: var(--secondary-color);
+    }
+
+    .HamburgerMenu{
+        position: absolute;
+        left: 2%;
+        cursor: pointer;
+    }
+    
+    .HamburgerMenu:hover {  transform: scale(1.2);
+    }
+
+    .SettingCog{
+        position: absolute;
+        left: 90%;
+        cursor: pointer;
+    }
+
+    .SettingCog:hover {  transform: scale(1.2);
+    }
+
+}
