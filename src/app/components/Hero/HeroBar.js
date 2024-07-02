@@ -1,7 +1,7 @@
 export default function HeroBar() {
 
     return(
-        <div >
+        <div className="border-black border-2">
 					<hr className="border-black my-2"/>
           <div className="inline-block px-2 border-solid border-2 rounded-2xl my-2">
             Design Journal
