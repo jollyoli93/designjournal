@@ -3,8 +3,6 @@ import Sidebar from "./components/Sidebar/Sidebar"
 import Contents from "./components/Contents/Contents"
 
 export default function Home() {
-  console.log("Hello")
-  let now = new Date()
 
   return(
     <> 
