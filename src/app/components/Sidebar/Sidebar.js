@@ -8,7 +8,7 @@ function SidebarList() {
     )
 
     return(
-        <ul>
+        <ul className="mt-1">
             {componentList}
         </ul>
     );
@@ -16,7 +16,7 @@ function SidebarList() {
 
 export default function Sidebar() {
     return(
-        <div className="w-[20vw] border-2 border-black">
+        <div className="w-[20vw] pt-10 border-2 border-black">
           <bold className="font-bold" >View all</bold>
           <SidebarList />
         </div>
