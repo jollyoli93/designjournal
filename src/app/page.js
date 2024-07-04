@@ -7,7 +7,7 @@ export default function Home() {
   return(
     <> 
       <HeroBar />
-      <div className="py-5 border-2 flex flex-grow">
+      <div className="py-5 flex flex-grow">
         <Sidebar />
         <Contents />
       </div>

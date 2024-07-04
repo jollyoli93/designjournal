@@ -16,7 +16,7 @@ function SidebarList() {
 
 export default function Sidebar() {
     return(
-        <div className="w-[20vw] hidden md:block pt-10 border-2 border-black">
+        <div className="w-[20vw] hidden md:block pt-10">
           <bold className="font-bold" >View all</bold>
           <SidebarList />
         </div>

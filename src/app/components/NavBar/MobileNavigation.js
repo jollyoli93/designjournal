@@ -22,14 +22,17 @@ const MobileNavigation = () =>{
     const Close = <CgCloseR className="HamburgerMenu"
             size="25px"
             color="black"
-            onClick={() => setClick(!click)} />  
+            onClick={() => setClick(!click)} />
+            
 
     const CloseMenu = () => setClick(false);
     
     return(
         <nav className="MobileNavigation">
-            <RxComponent1 />
-            <h2 className="logo text-lg font-bold">Untitled UI</h2>
+            <RxComponent1 
+                size="25px"
+            />
+            <h2 className="logo relative text-lg font-bold">Untitled UI</h2>
             {click ? Close : Hamburger}
             {click && <NavLinks isClicked={true} CloseMenu={CloseMenu}/>}
         </nav>

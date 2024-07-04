@@ -9,7 +9,7 @@ export default function Contents () {
     function ListContent () {
         return content.map((item, index) => (
             <div className="pt-10" key={item.key}>{
-                <div className="px-2  gap-10 flex flex-col md:flex-row md:px-10 lg:flex-row items-center">
+                <div className="px-2 gap-10 flex flex-col md:flex-row md:px-10 lg:flex-row items-center">
                     <Image 
                     src={item.url} 
                     width={350} 
@@ -30,7 +30,7 @@ export default function Contents () {
         ))
     }
     return (
-        <div className="flex-1 border-2 border-black">
+        <div className="flex-1">
             {ListContent()}
         </div>
     )
