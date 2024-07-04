@@ -4,7 +4,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     /* background-color: var(--main-color); */
-    padding: 30px 50px;
+    padding: 20px 30px;
 }
 
 .NavLinks {
@@ -58,28 +58,21 @@ nav ul li a:hover {
         position: absolute;
         border-top: 3px solid orange;
         top: 10vh;
-        left: 0;
+        right: 0;
         height: 50vh;
-        width: 50vw;
-        background-color: var(--secondary-color);
+        width: 40vw;
+        background-color: white;
     }
 
     .HamburgerMenu{
-        position: absolute;
-        left: 2%;
+        right: 5%;
         cursor: pointer;
     }
     
     .HamburgerMenu:hover {  transform: scale(1.2);
     }
 
-    .SettingCog{
-        position: absolute;
-        left: 90%;
-        cursor: pointer;
+    .logo {
+        position: static;
     }
-
-    .SettingCog:hover {  transform: scale(1.2);
-    }
-
 }
